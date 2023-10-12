@@ -19,9 +19,12 @@ int main()
 {
 	float data;
 
+	//creates stats object c for the user inputed values
 	stats c;
+	//creates stats object file for the file inputed values
 	stats file;
 
+	//user inputs values
 	cout << "Enter Value 1: ";
 	cin >> data;
 	c.setValue1(data);
@@ -38,9 +41,11 @@ int main()
 	cin >> data;
 	c.setValue4(data);
 
+	//calculates values for mean
 	c.meanCalc();
 	cout << "Mean: " << c.getMean() << endl;
 
+	//calculates values for standard deviation
 	c.standardDeviationCalc();
 	cout << "Standard Deviation: " << c.getStanDev() << endl;
 
@@ -48,6 +53,7 @@ int main()
 	ifstream inFile;
 	inFile.open("inMeanStd2023.dat");
 
+	//reads in values line by line
 	inFile >> data;
 	file.setValue1(data);
 
@@ -63,6 +69,7 @@ int main()
 	file.meanCalc();
 	file.standardDeviationCalc();
 
+	//outputs files to specified file
 	ofstream outFile;
 	outFile.open("OutMeanStd2023.dat");
 	outFile << "Mean: " << file.getMean() << "\n" << "Standard Deviation: " << file.getStanDev();

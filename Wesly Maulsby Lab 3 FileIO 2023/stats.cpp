@@ -12,7 +12,7 @@ stats::~stats()
 }
 
 
-
+//set and get functions for values
 void stats::setValue1(float value1_)
 {
 	value1 = value1_;
@@ -53,6 +53,7 @@ float stats::getValue4()
 	return value4;
 }
 
+//get and set for mean
 void stats::setMean(float mean_)
 {
 	mean = mean_;
@@ -63,11 +64,13 @@ float stats::getMean()
 	return mean;
 }
 
+//mean calculations
 void stats::meanCalc()
 {
 	mean = (value1 + value2 + value3 + value4) / 4.0;
 }
 
+//get and set for standard deviation
 void stats::setStanDev(float stanDev_)
 {
 	stanDev = stanDev_;
@@ -78,6 +81,7 @@ float stats::getStanDev()
 	return stanDev;
 }
 
+//standard deviation calculations
 void stats::standardDeviationCalc()
 {
 	value1M = value1 - mean;

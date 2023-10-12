@@ -10,14 +10,20 @@ public:
 	~stats();
 
 	//public functions
+	
+	//calculations
 	void standardDeviationCalc();
 	void meanCalc();
+
+	//set functions
 	void setValue1(float value1_);
 	void setValue2(float value2_);
 	void setValue3(float value3_);
 	void setValue4(float value4_);
 	void setMean(float mean_);
 	void setStanDev(float stanDev_);
+
+	//get functions
 	float getValue1();
 	float getValue2();
 	float getValue3();

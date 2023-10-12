@@ -27,4 +27,12 @@
       <Filter>Resource Files</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="inMeanStd2023.dat">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="OutMeanStd2023.dat">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>
